@@ -22,9 +22,7 @@ google_analytics:
 
 header_pages:
   - about.md
-#Navigation 
-main:
-  -title: Safe Streets
+  - title: Safe Streets
     url: https://www.safestreetsdetroit.com/
 
 # Everything below here can be ignored, unless you want to change the theme entirely
