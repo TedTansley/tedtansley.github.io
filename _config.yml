@@ -20,10 +20,12 @@ use_math:
 # Add your Google Analytics ID here if you have one and want to use it
 google_analytics:
 
-header_pages:
-  - about.md
-  - title: Safe Streets
-    url: https://www.safestreetsdetroit.com/
+header_pages: {% raw %}
+  {% for item in site.data.navigation %}
+    - title: {{ item.title }}
+      url: {{ item.url | relative_url }}
+  {% endfor %}{% endraw %}
+
 
 # Everything below here can be ignored, unless you want to change the theme entirely
 theme: minima
