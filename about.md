@@ -5,7 +5,6 @@ I also help run a casual urbanist meetup whiech is just a space for people to ta
 
 ### Socials
 - [LinkedIn](https://www.linkedin.com/in/tdtansley)
-
 - [BlueSky](https://bsky.app/profile/tedtansley.bsky.social)
 - [Twitter](https://x.com/tedtansley)
 - [Instagram](https://www.instagram.com/tedbytheriver/)
