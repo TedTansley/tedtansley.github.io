@@ -1,8 +1,1 @@
-Hello and welcome to my blogsite. 
-
-I need to still work on this and figure out how to:
-Use [Markdown](https://guides.github.com/features/mastering-markdown/). 
-Include images
-
-## This is a title tag ~~
-Posts will appear after this file. 
+Hello and welcome to my blogsite. I'm using it to have a space to write about my work, my activism, and my interests. 
