@@ -15,7 +15,9 @@ Hundreds and even thousands of reported sidewalks from as far back as 2018 witho
 
 The data does reveal a troubling trend: an exponential rise in reports going unaddressed.
 ![](/images/cumulative-line-chart-of-reports-by-year.png "This line chart shows a rising total of unaddressed sidewalk repair requests being made.")
+
 What is this telling us? That reports do not have an address included? Only 6 of the reported 10K+ do not have an address listed when I originally looked. By the time of this posting, they had all seemingly been addressed. 
+
 ![](/images/nan-counts.PNG "Python output of missing data")
 
 The city claims on their [sidewalk program page](https://detroitmi.gov/departments/department-public-works/sidewalk-program) that they “[have] funding to replace 70,000 broken sidewalk slabs in 2023.  This represents approximately 20% of all damaged sidewalk citywide.”. Why did the number of unaddressed reports rise by more than a thousand in the year 2024? Where is the data on completed sidewalk repair if not in their own sidewalk reporting web app? 
