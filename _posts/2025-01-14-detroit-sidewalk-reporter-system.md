@@ -9,12 +9,12 @@ Because the web application and City Data Portal do not provide a direct method 
 The immediate finding was that out of 10,454 records (dating to before current year 2025), not a single one had an inspection date. Now, the city typically spends $4.5 million per year into their sidewalk replacement program and had [recently increased that investment](https://www.fox2detroit.com/news/city-of-detroit-unveils-plan-for-sidewalks-repairs-and-replacements) to add an additional $20.5 million in 2023. 
 
 This must mean that all the reports are new and are simply waiting the two weeks for inspection, right? Well, when we look at the creation date found in the data, we get the following:
-![](/images/bar-chart-of-sidewalk-reports-per-year.png "This chart shows the number of reports that remain unaddressed by creation year")
+![](/images/bar-chart-of-sidewalk-reports-per-year.png "This bar chart shows the number of reports that remain unaddressed by creation year")
 
 Hundreds and even thousands of reported sidewalks from as far back as 2018 without a resolution. This could lead to many dissatisfied Detroiters with the perception that the city isn’t doing anything with the reports and is only fixing more advantaged areas. To know with more certainty about where the city is and isn’t working, we would need more open data about these sidewalk requests so a more complete analysis can be performed.
 
 The data does reveal a troubling trend: an exponential rise in reports going unaddressed.
-![](/images/cumulative-line-chart-of-reports-by-year.png "This chart shows the number of reports that remain unaddressed by creation year")
+![](/images/cumulative-line-chart-of-reports-by-year.png "This line chart shows a rising total of unaddressed sidewalk repair requests being made.")
 What is this telling us? That reports do not have an address included? Only 6 of the reported 10K+ do not have an address listed when I originally looked. By the time of this posting, they had all seemingly been addressed. 
 ![](/images/nan-counts.PNG "Python output of missing data")
 
