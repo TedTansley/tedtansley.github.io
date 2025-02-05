@@ -30,10 +30,10 @@ When I looked at each layer, I thought it was interesting that essentially the e
 <table align="center">
   <tr>
     <td style="text-align: center; vertical-align: middle;">
-      <img alt="August 2019 sidewalk" src="./images/august-2019-chalmers-sidewalk.PNG" style="height: 350px; width: auto;">
+      <img alt="August 2019 sidewalk" src="/images/august-2019-chalmers-sidewalk.PNG" style="height: 350px; width: auto;">
     </td>
     <td style="text-align: center; vertical-align: middle;">
-      <img alt="September 2023 sidewalk" src="./images/september-2023-chalmers-sidewalk.PNG" style="height: 350px; width: auto;">
+      <img alt="September 2023 sidewalk" src="/images/september-2023-chalmers-sidewalk.PNG" style="height: 350px; width: auto;">
     </td>
   </tr>
 </table>
