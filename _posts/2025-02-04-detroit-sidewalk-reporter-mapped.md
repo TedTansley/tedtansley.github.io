@@ -14,7 +14,7 @@ Even though the city’s map viewer accepts the layer and correctly maps it I co
 
 It worked! For some reason the city’s parcel data had mislabeled their longitude and latitude columns and must’ve been doing something on the backend to get it to visualize instead of having a clean dataset (maybe using the “LAT_LONG” column) 🤷‍♂️ .
 
-#### In summary, Here is what I did to clean the data 😤
+#### In summary, Here is what I did to clean the data 😤:
 
 - Removed columns that I didn’t need or want from the parcel dataset and with the data merged, I dropped a duplicate CreationDate column and renamed the original from the reports dataset. 
 - Identified rows where there were missing latitude and longitude data and then added the missing data into the set. 
