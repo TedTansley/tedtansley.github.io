@@ -1,5 +1,5 @@
 # About me
-I’m an SEO Manager professionally and an activist personally working to make Detroit the Mobility City. Whether it’s advocating for sidewalk repairs, safer streets, a bathroom netowork, reopened libraries, or something else, I'm putting my efforts into impactful change. I’m also a designated representative for my block club, where I’ve successfully pushed the city to address blight, install speed humps, and streetlights.
+I’ve worked professionally as an SEO Manager and Analyst and have spent years as an activist personally working to make Detroit the Mobility City. Whether it’s advocating for sidewalk repairs, safer streets, a bathroom network, reopened libraries, or something else, I'm putting my efforts into impactful change. I’m also a designated representative for my block club, where I’ve successfully pushed the city to address blight, install speed humps, and streetlights.
 
 I also help run a casual urbanist meetup which is just a space for people to talk about cities and connect over shared interests. [Follow us on Eventbrite!](https://www.eventbrite.com/o/detroit-urbanists-85158716243)
 
