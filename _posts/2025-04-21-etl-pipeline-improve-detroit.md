@@ -13,6 +13,7 @@ What I knew was that I needed to develop what is considered an ETL Pipeline or E
 My primary script was written in Python, designed to handle the heavy lifting of taking the data along the pipeline and into the database. As I was developing it, I encountered several challenges that ultimately strengthened the final solution:
 
 - **Data volume and rate limiting:** I found early on that the services directory wouldn’t let me pull all of the data all at once and so to prevent it from automatically returning a server error to my request, I broke it down into small batches of reports and looped over the request. I further added functions to allow additional attempts in the event that I do experience rate limiting. 
+
 ```
 params = {
     "f": "json",
