@@ -63,10 +63,10 @@ def fetch_gis_data():
         else:
             print(f"Failed to fetch data after retries. Exiting.")
             break
-
 ```
 
 - **Schema and metadata alignment:** To ensure that BigQuery would take the data, I had to ensure that the data pulled aligned with a schema table that BigQuery can understand. Thankfully the city had available metadata for me to reference. 
+
 ```
 schema = [
     bigquery.SchemaField("ID", "INTEGER"),
@@ -86,12 +86,12 @@ schema = [
     bigquery.SchemaField("Longitude", "BIGNUMERIC"),
     bigquery.SchemaField("Zip_Code", "STRING")
 ]
-
 ```
 
 - **Data type inconsistencies:** The Latitude and Longitude fields fluctuated in length, causing errors with attributing them to the NUMERIC type. I standardized these fields to BIGNUMERIC in BigQuery to handle variations safely. Additionally, the Days_to_Close field was a string/text type which I converted into FLOAT so I could work with it in my dashboard and keep it accurate to the decimal. 
 - **Resource management and BigQuery integration:** Transitioning from Google Sheets to BigQuery required that I set the correct project environments, define access scopes, and connect a Google Cloud Service Account to automate secure data transfers.
 - **Automation and scalability:** Using GitHub Actions, I automated regular data retrieval and loading into BigQuery. Secure key management and YAML configuration files allowed me to connect files and access keys without exposing sensitive credentials.
+
 ```
        env:
           GCP_SERVICE_ACCOUNT_JSON: ${{ secrets.GCP_SERVICE_ACCOUNT_JSON }}
