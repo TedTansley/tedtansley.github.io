@@ -15,19 +15,6 @@ My primary script was written in Python, designed to handle the heavy lifting of
 - **Data volume and rate limiting:** I found early on that the services directory wouldn’t let me pull all of the data all at once and so to prevent it from automatically returning a server error to my request, I broke it down into small batches of reports and looped over the request. I further added functions to allow additional attempts in the event that I do experience rate limiting. 
 
 ```
-params = {
-    "f": "json",
-    "where": "1=1",  # Adjust this filter based on your data
-    "returnGeometry": "true",
-    "spatialRel": "esriSpatialRelIntersects",
-    "geometryType": "esriGeometryEnvelope",
-    "geometry": None,  # Specify geometry if needed
-    "inSR": "102100",
-    "outFields": "*",  # Fetch all fields
-    "orderByFields": "objectid ASC",
-    "outSR": "102100",
-    "resultRecordCount": 1000,  # Records per request
-}
 def safe_request(url, params, retries=3, delay=2):
     for attempt in range(retries):
         try:
@@ -42,28 +29,6 @@ def safe_request(url, params, retries=3, delay=2):
             print(f"Request failed: {e}. Retrying... ({attempt + 1}/{retries})")
             time.sleep(delay)  # Wait before retrying
     return None
-
-def fetch_gis_data():
-    all_data = []
-    offset = 0
-
-    while True:
-        params["resultOffset"] = offset
-        response = safe_request(GIS_URL, params)
-
-        if response:
-            data = response.json()
-            if "features" in data and len(data["features"]) > 0:
-                for feature in data["features"]:
-                    attributes = feature["attributes"]
-                    all_data.append(attributes)
-                offset += len(data["features"])  # Increment offset for the next batch
-            else:
-                print("No more records to fetch.")
-                break
-        else:
-            print(f"Failed to fetch data after retries. Exiting.")
-            break
 ```
 
 - **Schema and metadata alignment:** To ensure that BigQuery would take the data, I had to ensure that the data pulled aligned with a schema table that BigQuery can understand. Thankfully the city had available metadata for me to reference. 
