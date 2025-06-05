@@ -14,14 +14,30 @@ Digging into the reports with missing addresses, they generally fell into three 
 The **first**, reports where the address was redacted, didn’t have location data associated with the reports. 44,858 reports in total [~7.3% of all reports]. All of which fell into three report type categories:
 
 <div align="center">
-  
-| Request Type                 | Report Count |
-|-----------------------------|--------------|
-| Abandoned Vehicle           | 39,966       |
-| Squatters Issue             | 3,983        |
-| Illegal Dumping In Progress| 909          |
-
+  <table>
+    <thead>
+      <tr>
+        <th>Request Type</th>
+        <th>Report Count</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Abandoned Vehicle</td>
+        <td>39,966</td>
+      </tr>
+      <tr>
+        <td>Squatters Issue</td>
+        <td>3,983</td>
+      </tr>
+      <tr>
+        <td>Illegal Dumping In Progress</td>
+        <td>909</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
 
 ~~~
 SELECT Request_Type_Title,COUNT(*)
@@ -47,18 +63,46 @@ A total of 16,053 reports—approximately 2.6% of all submissions—were found t
 ![Misaligned Reports by Year Grouped By District](/images/misaligned-chart.png)
 
 <div align="center">
-  
-| Council District | Percentage of Total Misaligned Reports |
-|------------------|----------------------------------------|
-| District 1       | 11.06%                                 |
-| District 2       | 31.19%                                 |
-| District 3       | 1.79%                                  |
-| District 4       | 8.13%                                  |
-| District 5       | 32.41%                                 |
-| District 6       | 9.24%                                  |
-| District 7       | 6.18%                                  |
-
+  <table>
+    <thead>
+      <tr>
+        <th>Council District</th>
+        <th>Percentage of Total Misaligned Reports</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>District 1</td>
+        <td>11.06%</td>
+      </tr>
+      <tr>
+        <td>District 2</td>
+        <td>31.19%</td>
+      </tr>
+      <tr>
+        <td>District 3</td>
+        <td>1.79%</td>
+      </tr>
+      <tr>
+        <td>District 4</td>
+        <td>8.13%</td>
+      </tr>
+      <tr>
+        <td>District 5</td>
+        <td>32.41%</td>
+      </tr>
+      <tr>
+        <td>District 6</td>
+        <td>9.24%</td>
+      </tr>
+      <tr>
+        <td>District 7</td>
+        <td>6.18%</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+
 
 ~~~
 SELECT
