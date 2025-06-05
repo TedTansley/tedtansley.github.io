@@ -12,6 +12,7 @@ Digging into the reports with missing addresses, they generally fell into three 
 
 ![Screenshot from the Looker Studio Dashboard](/images/dashboard-redacted.png)
 The **first**, reports where the address was redacted, didn’t have location data associated with the reports. 44,858 reports in total [~7.3% of all reports]. All of which fell into three report type categories:
+
 <div align="center">
   
 | Request Type                 | Report Count |
@@ -44,6 +45,7 @@ After reviewing the address issues, attention turned to another concern: reports
 A total of 16,053 reports—approximately 2.6% of all submissions—were found to be misaligned, meaning the district listed in the report did not match the district where the incident actually occurred. The discrepancy rates varied widely by district:
 
 ![Misaligned Reports by Year Grouped By District](/images/misaligned-chart.png)
+
 <div align="center">
   
 | Council District | Percentage of Total Misaligned Reports |
